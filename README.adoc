@@ -1,0 +1,19 @@
+= Chromebook setup
+
+== Setup steps
+
+.Download go-lang and install
+[source,bash]
+----
+wget https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.14.3.linux-amd64.tar.gz
+----
+
+.Configure go in .profile
+[source,bash]
+----
+GOROOT=/usr/local/go
+GOPATH=$HOME/go
+PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export CGO_ENABLED=0
+----
