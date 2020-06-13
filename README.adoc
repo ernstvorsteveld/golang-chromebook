@@ -17,3 +17,9 @@ GOPATH=$HOME/go
 PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 export CGO_ENABLED=0
 ----
+
+-Install delve
+[source,bash]
+----
+go get github.com/go-delve/delve/cmd/dlv
+----
